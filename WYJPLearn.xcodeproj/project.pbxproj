@@ -13,9 +13,16 @@
 		1B1779C41C2020C7003ACE31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B1779C21C2020C7003ACE31 /* Main.storyboard */; };
 		1B1779C61C2020C7003ACE31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B1779C51C2020C7003ACE31 /* Assets.xcassets */; };
 		1B1779C91C2020C7003ACE31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B1779C71C2020C7003ACE31 /* LaunchScreen.storyboard */; };
+		1B97D4FB1C23A89000047B96 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B97D4FA1C23A89000047B96 /* config.json */; };
+		1B97D5001C23B91100047B96 /* WYConfigService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B97D4FF1C23B91100047B96 /* WYConfigService.m */; };
+		1B97D5041C23F08A00047B96 /* WYConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B97D5031C23F08A00047B96 /* WYConfigModel.m */; };
+		1B97D5071C23F0CF00047B96 /* WYConfigCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B97D5061C23F0CF00047B96 /* WYConfigCore.m */; };
+		1B97D50A1C23F4F600047B96 /* WYModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B97D5091C23F4F600047B96 /* WYModelManager.m */; };
+		2A82D77B7C7C71F077F4191E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A790EED4B96D8F28C467F5 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B4947B5B52748F946C207C5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		1B1779B61C2020C7003ACE31 /* WYJPLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WYJPLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B1779BA1C2020C7003ACE31 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1B1779BC1C2020C7003ACE31 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +33,17 @@
 		1B1779C51C2020C7003ACE31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B1779C81C2020C7003ACE31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B1779CA1C2020C7003ACE31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B97D4FA1C23A89000047B96 /* config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
+		1B97D4FE1C23B91100047B96 /* WYConfigService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYConfigService.h; sourceTree = "<group>"; };
+		1B97D4FF1C23B91100047B96 /* WYConfigService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYConfigService.m; sourceTree = "<group>"; };
+		1B97D5021C23F08A00047B96 /* WYConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYConfigModel.h; sourceTree = "<group>"; };
+		1B97D5031C23F08A00047B96 /* WYConfigModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYConfigModel.m; sourceTree = "<group>"; };
+		1B97D5051C23F0CF00047B96 /* WYConfigCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYConfigCore.h; sourceTree = "<group>"; };
+		1B97D5061C23F0CF00047B96 /* WYConfigCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYConfigCore.m; sourceTree = "<group>"; };
+		1B97D5081C23F4F600047B96 /* WYModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYModelManager.h; sourceTree = "<group>"; };
+		1B97D5091C23F4F600047B96 /* WYModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYModelManager.m; sourceTree = "<group>"; };
+		2975366E093244D5F3D32E11 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F5A790EED4B96D8F28C467F5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A82D77B7C7C71F077F4191E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +63,8 @@
 			children = (
 				1B1779B81C2020C7003ACE31 /* WYJPLearn */,
 				1B1779B71C2020C7003ACE31 /* Products */,
+				794F67B2795B25F525649711 /* Pods */,
+				7E4E6C1C2DE9BCCEFEDB5F36 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +79,11 @@
 		1B1779B81C2020C7003ACE31 /* WYJPLearn */ = {
 			isa = PBXGroup;
 			children = (
+				1B97D4FC1C23A8C300047B96 /* Utility */,
+				1B97D4FD1C23A8C300047B96 /* Vendor */,
+				1B97D4F71C23A88000047B96 /* config */,
+				1B97D4F81C23A88000047B96 /* Model */,
+				1B97D4F91C23A88000047B96 /* Service */,
 				1B1779BC1C2020C7003ACE31 /* AppDelegate.h */,
 				1B1779BD1C2020C7003ACE31 /* AppDelegate.m */,
 				1B1779BF1C2020C7003ACE31 /* ViewController.h */,
@@ -79,6 +105,75 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		1B97D4F71C23A88000047B96 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				1B97D4FA1C23A89000047B96 /* config.json */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		1B97D4F81C23A88000047B96 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B97D5021C23F08A00047B96 /* WYConfigModel.h */,
+				1B97D5031C23F08A00047B96 /* WYConfigModel.m */,
+				1B97D5051C23F0CF00047B96 /* WYConfigCore.h */,
+				1B97D5061C23F0CF00047B96 /* WYConfigCore.m */,
+				1B97D5081C23F4F600047B96 /* WYModelManager.h */,
+				1B97D5091C23F4F600047B96 /* WYModelManager.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B97D4F91C23A88000047B96 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1B97D5011C23B9C300047B96 /* NetService */,
+				1B97D4FE1C23B91100047B96 /* WYConfigService.h */,
+				1B97D4FF1C23B91100047B96 /* WYConfigService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1B97D4FC1C23A8C300047B96 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		1B97D4FD1C23A8C300047B96 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		1B97D5011C23B9C300047B96 /* NetService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetService;
+			sourceTree = "<group>";
+		};
+		794F67B2795B25F525649711 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B4947B5B52748F946C207C5 /* Pods.debug.xcconfig */,
+				2975366E093244D5F3D32E11 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7E4E6C1C2DE9BCCEFEDB5F36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5A790EED4B96D8F28C467F5 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B1779CD1C2020C7003ACE31 /* Build configuration list for PBXNativeTarget "WYJPLearn" */;
 			buildPhases = (
+				14216CCC4045B57694541081 /* Check Pods Manifest.lock */,
 				1B1779B21C2020C7003ACE31 /* Sources */,
 				1B1779B31C2020C7003ACE31 /* Frameworks */,
 				1B1779B41C2020C7003ACE31 /* Resources */,
+				005CA80A9708A8FEF05F1DF3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B1779C91C2020C7003ACE31 /* LaunchScreen.storyboard in Resources */,
+				1B97D4FB1C23A89000047B96 /* config.json in Resources */,
 				1B1779C61C2020C7003ACE31 /* Assets.xcassets in Resources */,
 				1B1779C41C2020C7003ACE31 /* Main.storyboard in Resources */,
 			);
@@ -144,14 +242,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		005CA80A9708A8FEF05F1DF3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		14216CCC4045B57694541081 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1B1779B21C2020C7003ACE31 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B97D5041C23F08A00047B96 /* WYConfigModel.m in Sources */,
+				1B97D50A1C23F4F600047B96 /* WYModelManager.m in Sources */,
 				1B1779C11C2020C7003ACE31 /* ViewController.m in Sources */,
+				1B97D5071C23F0CF00047B96 /* WYConfigCore.m in Sources */,
 				1B1779BE1C2020C7003ACE31 /* AppDelegate.m in Sources */,
 				1B1779BB1C2020C7003ACE31 /* main.m in Sources */,
+				1B97D5001C23B91100047B96 /* WYConfigService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +394,7 @@
 		};
 		1B1779CE1C2020C7003ACE31 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B4947B5B52748F946C207C5 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WYJPLearn/Info.plist;
@@ -270,6 +406,7 @@
 		};
 		1B1779CF1C2020C7003ACE31 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2975366E093244D5F3D32E11 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WYJPLearn/Info.plist;
@@ -298,6 +435,7 @@
 				1B1779CF1C2020C7003ACE31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
