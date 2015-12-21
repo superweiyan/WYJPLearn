@@ -28,7 +28,8 @@
 
 - (void)loadConfig
 {
-    [_configCore querySoundMarkConfig];
+//    [_configCore querySoundMarkConfig];
+//    [_configCore testJson];
 }
 
 @end

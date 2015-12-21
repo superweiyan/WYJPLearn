@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "WYConfigService.h"
 #import "WYModelManager.h"
+#import "WYMainViewController.h"
 
 @interface AppDelegate ()
 
@@ -23,6 +24,10 @@
     [WYModelManager sharedObject];
     [WYConfigService sharedObject];
     
+    WYMainViewController *maincontroller = [[WYMainViewController alloc] init];
+
+    self.window.rootViewController = maincontroller;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

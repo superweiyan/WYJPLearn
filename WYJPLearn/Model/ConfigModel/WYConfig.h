@@ -1,5 +1,5 @@
 //
-//  WYConfigCore.h
+//  WYConfig.h
 //  WYJPLearn
 //
 //  Created by weiyan on 15/12/18.
@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface WYConfigCore : NSObject
+@interface WYConfig : NSObject
 
-- (void)querySoundMarkConfig;
+@property (nonatomic, assign) BOOL first;
 
 @end
