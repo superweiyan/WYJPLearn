@@ -21,7 +21,6 @@
 		1B97D51C1C2410E800047B96 /* WYConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B97D51B1C2410E800047B96 /* WYConfig.m */; };
 		1B97D51E1C24FE2E00047B96 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B97D51D1C24FE2E00047B96 /* config.plist */; };
 		1B97D5211C2526E600047B96 /* MFTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B97D5201C2526E600047B96 /* MFTestModel.m */; };
-		1B97D5291C28544F00047B96 /* WYPhonematicChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B97D5281C28544F00047B96 /* WYPhonematicChartViewController.m */; };
 		1B97D5BC1C2AD3A400047B96 /* a.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1B97D5561C2AD3A300047B96 /* a.wav */; };
 		1B97D5BD1C2AD3A400047B96 /* ba.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1B97D5571C2AD3A300047B96 /* ba.wav */; };
 		1B97D5BE1C2AD3A400047B96 /* be.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1B97D5581C2AD3A300047B96 /* be.wav */; };
@@ -127,6 +126,7 @@
 		1B97D6241C2AD4E900047B96 /* WYMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B97D6231C2AD4E900047B96 /* WYMainViewController.m */; };
 		1B97D6271C2AD52C00047B96 /* MFLessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B97D6261C2AD52C00047B96 /* MFLessionViewController.m */; };
 		1B97D62B1C2AEF9800047B96 /* WYInterfaceService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B97D62A1C2AEF9800047B96 /* WYInterfaceService.m */; };
+		1BE4E5431C75AB69006FA06B /* WYPhonematicChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE4E5421C75AB69006FA06B /* WYPhonematicChartViewController.m */; };
 		2A82D77B7C7C71F077F4191E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A790EED4B96D8F28C467F5 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -158,8 +158,6 @@
 		1B97D51D1C24FE2E00047B96 /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
 		1B97D51F1C2526E600047B96 /* MFTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFTestModel.h; sourceTree = "<group>"; };
 		1B97D5201C2526E600047B96 /* MFTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFTestModel.m; sourceTree = "<group>"; };
-		1B97D5271C28544F00047B96 /* WYPhonematicChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYPhonematicChartViewController.h; sourceTree = "<group>"; };
-		1B97D5281C28544F00047B96 /* WYPhonematicChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYPhonematicChartViewController.m; sourceTree = "<group>"; };
 		1B97D5561C2AD3A300047B96 /* a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = a.wav; sourceTree = "<group>"; };
 		1B97D5571C2AD3A300047B96 /* ba.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ba.wav; sourceTree = "<group>"; };
 		1B97D5581C2AD3A300047B96 /* be.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = be.wav; sourceTree = "<group>"; };
@@ -268,6 +266,8 @@
 		1B97D6261C2AD52C00047B96 /* MFLessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFLessionViewController.m; sourceTree = "<group>"; };
 		1B97D6291C2AEF9800047B96 /* WYInterfaceService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYInterfaceService.h; sourceTree = "<group>"; };
 		1B97D62A1C2AEF9800047B96 /* WYInterfaceService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYInterfaceService.m; sourceTree = "<group>"; };
+		1BE4E5411C75AB69006FA06B /* WYPhonematicChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYPhonematicChartViewController.h; sourceTree = "<group>"; };
+		1BE4E5421C75AB69006FA06B /* WYPhonematicChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYPhonematicChartViewController.m; sourceTree = "<group>"; };
 		2975366E093244D5F3D32E11 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F5A790EED4B96D8F28C467F5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -406,10 +406,9 @@
 		1B97D5261C2851C100047B96 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1BE4E5401C75AA02006FA06B /* Lesson */,
 				1B97D6221C2AD4E900047B96 /* WYMainViewController.h */,
 				1B97D6231C2AD4E900047B96 /* WYMainViewController.m */,
-				1B97D5271C28544F00047B96 /* WYPhonematicChartViewController.h */,
-				1B97D5281C28544F00047B96 /* WYPhonematicChartViewController.m */,
 				1B97D6251C2AD52C00047B96 /* MFLessionViewController.h */,
 				1B97D6261C2AD52C00047B96 /* MFLessionViewController.m */,
 			);
@@ -538,6 +537,15 @@
 			children = (
 			);
 			path = UIView;
+			sourceTree = "<group>";
+		};
+		1BE4E5401C75AA02006FA06B /* Lesson */ = {
+			isa = PBXGroup;
+			children = (
+				1BE4E5411C75AB69006FA06B /* WYPhonematicChartViewController.h */,
+				1BE4E5421C75AB69006FA06B /* WYPhonematicChartViewController.m */,
+			);
+			path = Lesson;
 			sourceTree = "<group>";
 		};
 		794F67B2795B25F525649711 /* Pods */ = {
@@ -776,9 +784,9 @@
 				1B97D6271C2AD52C00047B96 /* MFLessionViewController.m in Sources */,
 				1B97D5001C23B91100047B96 /* WYConfigService.m in Sources */,
 				1B97D5181C2410AC00047B96 /* WYConfigModel.m in Sources */,
+				1BE4E5431C75AB69006FA06B /* WYPhonematicChartViewController.m in Sources */,
 				1B97D6241C2AD4E900047B96 /* WYMainViewController.m in Sources */,
 				1B97D5191C2410AC00047B96 /* WYModelManager.m in Sources */,
-				1B97D5291C28544F00047B96 /* WYPhonematicChartViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import "MFLessionViewController.h"
+#import "WYPhonematicChartViewController.h"
 
 CGFloat kWYGigWidth = 80;
 CGFloat kWYGigHeight = 110;
@@ -64,7 +65,20 @@ CGFloat kWYGigHeight = 110;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    switch (indexPath.row) {
+        case 0:
+        {
+            WYPhonematicChartViewController *viewController = [[WYPhonematicChartViewController alloc] init];
+            [self.navigationController pushViewController:viewController animated:YES];
+        }
+            break;
+        case 1:
+            break;
+        case 2:
+            break;
+        default:
+            break;
+    }
 }
 
 @end
