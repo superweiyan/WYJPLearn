@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface WYInterfaceService : NSObject
+
+@property (nonatomic, readonly) UINavigationController *navigationController;
+
++ (instancetype)sharedObject;
+
+- (void)showMainViewController;
+
+//- (void)jumpToWYPhonematicChartViewController;
 
 @end

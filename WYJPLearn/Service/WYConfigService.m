@@ -20,7 +20,6 @@
         __instance = [[WYConfigService alloc] init];
     });
     return __instance;
-
 }
 
 - (id)init

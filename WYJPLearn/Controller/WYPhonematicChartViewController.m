@@ -9,7 +9,9 @@
 #import "WYPhonematicChartViewController.h"
 
 @interface WYPhonematicChartViewController ()
-
+{
+    UICollectionView *_collectionView;
+}
 @end
 
 @implementation WYPhonematicChartViewController
