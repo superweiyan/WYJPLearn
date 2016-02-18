@@ -14,6 +14,8 @@ CGFloat kWYGigHeight = 110;
 @interface MFLessionViewController()<UITableViewDelegate, UITableViewDataSource>
 {
     UITableView *_tableView;
+    
+    NSArray *_lessonTitle;
 }
 @end
 
@@ -28,7 +30,7 @@ CGFloat kWYGigHeight = 110;
         _tableView.dataSource = self;
         [self.view addSubview:_tableView];
         
-        [self loadLession];
+        _lessonTitle = @[@"五十音", @"浊音", @"拗音"];
     }
     return self;
 }
@@ -39,19 +41,11 @@ CGFloat kWYGigHeight = 110;
     _tableView.frame = self.view.bounds;
 }
 
-- (void)loadLession
-{
-//    NSError *error = nil;
-//    NSString *path = [[[[NSBundle mainBundle] resourcePath] stringByAppendingString:@"/"] stringByAppendingString:@"japaneseNote.json"];
-//    NSString *str = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:&error];
-    
-}
-
 #pragma mark UITableViewDataSource, UITableViewDelegate
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 2;
+    return _lessonTitle.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -61,8 +55,10 @@ CGFloat kWYGigHeight = 110;
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"tableIndentifier"];
     }
     
-    cell.textLabel.text = @"五十音图";
-    
+    if (indexPath.row < _lessonTitle.count) {
+        NSString *title = [_lessonTitle objectAtIndex:indexPath.row];
+        cell.textLabel.text = title;
+    }
     return cell;
 }
 
