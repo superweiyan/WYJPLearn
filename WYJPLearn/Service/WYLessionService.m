@@ -7,7 +7,14 @@
 //
 
 #import "WYLessionService.h"
+#import "WYModelManager.h"
+#import "WYCharAudioModel.h"
 
 @implementation WYLessionService
+
+- (NSArray *)getAudioArrayByType:(WYAudioType)type
+{
+    return [[WYModelManager sharedObject].charAudioModel getAudioArrayByType:type];
+}
 
 @end

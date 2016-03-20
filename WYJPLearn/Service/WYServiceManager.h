@@ -10,4 +10,10 @@
 
 @interface WYServiceManager : NSObject
 
++ (instancetype)sharedObject;
+
+- (void)registerServiceName:(NSString *)serviceName;
+
+- (id)getService:(NSString *)serviceName;
+
 @end

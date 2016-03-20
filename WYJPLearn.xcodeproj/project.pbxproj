@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B0BCA851C9A884900F8DB75 /* Lesson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B0BCA841C9A884900F8DB75 /* Lesson.storyboard */; };
 		1B1779BB1C2020C7003ACE31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1779BA1C2020C7003ACE31 /* main.m */; };
 		1B1779BE1C2020C7003ACE31 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1779BD1C2020C7003ACE31 /* AppDelegate.m */; };
 		1B1779C11C2020C7003ACE31 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1779C01C2020C7003ACE31 /* ViewController.m */; };
 		1B1779C41C2020C7003ACE31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B1779C21C2020C7003ACE31 /* Main.storyboard */; };
 		1B1779C61C2020C7003ACE31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B1779C51C2020C7003ACE31 /* Assets.xcassets */; };
 		1B1779C91C2020C7003ACE31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B1779C71C2020C7003ACE31 /* LaunchScreen.storyboard */; };
+		1B47FF891C994710007177F1 /* WYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B47FF881C994710007177F1 /* WYNavigationController.m */; };
 		1B97D5001C23B91100047B96 /* WYConfigService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B97D4FF1C23B91100047B96 /* WYConfigService.m */; };
 		1B97D50E1C2405EC00047B96 /* WYJsonToModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B97D50D1C2405EC00047B96 /* WYJsonToModel.m */; };
 		1B97D5171C2410AC00047B96 /* WYConfigCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B97D5111C2410AC00047B96 /* WYConfigCore.m */; };
 		1B97D5181C2410AC00047B96 /* WYConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B97D5141C2410AC00047B96 /* WYConfigModel.m */; };
-		1B97D5191C2410AC00047B96 /* WYModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B97D5161C2410AC00047B96 /* WYModelManager.m */; };
 		1B97D51C1C2410E800047B96 /* WYConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B97D51B1C2410E800047B96 /* WYConfig.m */; };
-		1B97D51E1C24FE2E00047B96 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B97D51D1C24FE2E00047B96 /* config.plist */; };
 		1B97D5211C2526E600047B96 /* MFTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B97D5201C2526E600047B96 /* MFTestModel.m */; };
 		1B97D5BC1C2AD3A400047B96 /* a.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1B97D5561C2AD3A300047B96 /* a.wav */; };
 		1B97D5BD1C2AD3A400047B96 /* ba.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1B97D5571C2AD3A300047B96 /* ba.wav */; };
@@ -127,11 +127,22 @@
 		1B97D6271C2AD52C00047B96 /* MFLessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B97D6261C2AD52C00047B96 /* MFLessionViewController.m */; };
 		1B97D62B1C2AEF9800047B96 /* WYInterfaceService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B97D62A1C2AEF9800047B96 /* WYInterfaceService.m */; };
 		1BE4E5431C75AB69006FA06B /* WYPhonematicChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE4E5421C75AB69006FA06B /* WYPhonematicChartViewController.m */; };
+		1BF9CC9B1C9A8B5500EA3402 /* WYSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BF9CC9A1C9A8B5500EA3402 /* WYSelectView.xib */; };
+		1BF9CC9E1C9A8B7200EA3402 /* WYSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF9CC9D1C9A8B7200EA3402 /* WYSelectView.m */; };
+		1BF9CCA31C9A986500EA3402 /* WYLessionService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF9CCA21C9A986500EA3402 /* WYLessionService.m */; };
+		1BF9CCA61C9A9B1C00EA3402 /* WYServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF9CCA51C9A9B1C00EA3402 /* WYServiceManager.m */; };
+		1BF9CCAC1C9AABBC00EA3402 /* WYCharAudioModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF9CCAB1C9AABBC00EA3402 /* WYCharAudioModel.m */; };
+		1BF9CCAF1C9ADB9100EA3402 /* WYSoundmark.json in Resources */ = {isa = PBXBuildFile; fileRef = 1BF9CCAE1C9ADB9100EA3402 /* WYSoundmark.json */; };
+		1BF9CCB21C9AE16F00EA3402 /* WYJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF9CCB11C9AE16F00EA3402 /* WYJsonParser.m */; };
+		1BF9CCB61C9C09A800EA3402 /* WYModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF9CCB51C9C09A800EA3402 /* WYModelManager.m */; };
+		1BF9CCB91C9C09DF00EA3402 /* WYAudioChat.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF9CCB81C9C09DF00EA3402 /* WYAudioChat.m */; };
+		1BF9CCBC1C9C0ABC00EA3402 /* WYAudioType.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF9CCBB1C9C0ABC00EA3402 /* WYAudioType.m */; };
 		2A82D77B7C7C71F077F4191E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A790EED4B96D8F28C467F5 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0B4947B5B52748F946C207C5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		1B0BCA841C9A884900F8DB75 /* Lesson.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Lesson.storyboard; sourceTree = "<group>"; };
 		1B1779B61C2020C7003ACE31 /* WYJPLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WYJPLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B1779BA1C2020C7003ACE31 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1B1779BC1C2020C7003ACE31 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -142,6 +153,8 @@
 		1B1779C51C2020C7003ACE31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B1779C81C2020C7003ACE31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B1779CA1C2020C7003ACE31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B47FF871C994710007177F1 /* WYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYNavigationController.h; sourceTree = "<group>"; };
+		1B47FF881C994710007177F1 /* WYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYNavigationController.m; sourceTree = "<group>"; };
 		1B97D4FE1C23B91100047B96 /* WYConfigService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYConfigService.h; sourceTree = "<group>"; };
 		1B97D4FF1C23B91100047B96 /* WYConfigService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYConfigService.m; sourceTree = "<group>"; };
 		1B97D50C1C2405EC00047B96 /* WYJsonToModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYJsonToModel.h; sourceTree = "<group>"; };
@@ -151,11 +164,8 @@
 		1B97D5121C2410AC00047B96 /* WYConfigHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYConfigHeader.h; sourceTree = "<group>"; };
 		1B97D5131C2410AC00047B96 /* WYConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYConfigModel.h; sourceTree = "<group>"; };
 		1B97D5141C2410AC00047B96 /* WYConfigModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYConfigModel.m; sourceTree = "<group>"; };
-		1B97D5151C2410AC00047B96 /* WYModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYModelManager.h; sourceTree = "<group>"; };
-		1B97D5161C2410AC00047B96 /* WYModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYModelManager.m; sourceTree = "<group>"; };
 		1B97D51A1C2410E800047B96 /* WYConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYConfig.h; sourceTree = "<group>"; };
 		1B97D51B1C2410E800047B96 /* WYConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYConfig.m; sourceTree = "<group>"; };
-		1B97D51D1C24FE2E00047B96 /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
 		1B97D51F1C2526E600047B96 /* MFTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFTestModel.h; sourceTree = "<group>"; };
 		1B97D5201C2526E600047B96 /* MFTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFTestModel.m; sourceTree = "<group>"; };
 		1B97D5561C2AD3A300047B96 /* a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = a.wav; sourceTree = "<group>"; };
@@ -268,6 +278,25 @@
 		1B97D62A1C2AEF9800047B96 /* WYInterfaceService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYInterfaceService.m; sourceTree = "<group>"; };
 		1BE4E5411C75AB69006FA06B /* WYPhonematicChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYPhonematicChartViewController.h; sourceTree = "<group>"; };
 		1BE4E5421C75AB69006FA06B /* WYPhonematicChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYPhonematicChartViewController.m; sourceTree = "<group>"; };
+		1BF9CC9A1C9A8B5500EA3402 /* WYSelectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WYSelectView.xib; sourceTree = "<group>"; };
+		1BF9CC9C1C9A8B7200EA3402 /* WYSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYSelectView.h; sourceTree = "<group>"; };
+		1BF9CC9D1C9A8B7200EA3402 /* WYSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYSelectView.m; sourceTree = "<group>"; };
+		1BF9CCA01C9A8E9900EA3402 /* WYMarco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYMarco.h; sourceTree = "<group>"; };
+		1BF9CCA11C9A986500EA3402 /* WYLessionService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLessionService.h; sourceTree = "<group>"; };
+		1BF9CCA21C9A986500EA3402 /* WYLessionService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLessionService.m; sourceTree = "<group>"; };
+		1BF9CCA41C9A9B1C00EA3402 /* WYServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYServiceManager.h; sourceTree = "<group>"; };
+		1BF9CCA51C9A9B1C00EA3402 /* WYServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYServiceManager.m; sourceTree = "<group>"; };
+		1BF9CCAA1C9AABBC00EA3402 /* WYCharAudioModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYCharAudioModel.h; sourceTree = "<group>"; };
+		1BF9CCAB1C9AABBC00EA3402 /* WYCharAudioModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYCharAudioModel.m; sourceTree = "<group>"; };
+		1BF9CCAE1C9ADB9100EA3402 /* WYSoundmark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WYSoundmark.json; sourceTree = "<group>"; };
+		1BF9CCB01C9AE16F00EA3402 /* WYJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WYJsonParser.h; path = ../config/WYJsonParser.h; sourceTree = "<group>"; };
+		1BF9CCB11C9AE16F00EA3402 /* WYJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WYJsonParser.m; path = ../config/WYJsonParser.m; sourceTree = "<group>"; };
+		1BF9CCB41C9C09A800EA3402 /* WYModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYModelManager.h; sourceTree = "<group>"; };
+		1BF9CCB51C9C09A800EA3402 /* WYModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYModelManager.m; sourceTree = "<group>"; };
+		1BF9CCB71C9C09DF00EA3402 /* WYAudioChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYAudioChat.h; sourceTree = "<group>"; };
+		1BF9CCB81C9C09DF00EA3402 /* WYAudioChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYAudioChat.m; sourceTree = "<group>"; };
+		1BF9CCBA1C9C0ABC00EA3402 /* WYAudioType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYAudioType.h; sourceTree = "<group>"; };
+		1BF9CCBB1C9C0ABC00EA3402 /* WYAudioType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYAudioType.m; sourceTree = "<group>"; };
 		2975366E093244D5F3D32E11 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F5A790EED4B96D8F28C467F5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -305,12 +334,12 @@
 		1B1779B81C2020C7003ACE31 /* WYJPLearn */ = {
 			isa = PBXGroup;
 			children = (
+				1BF9CC9F1C9A8E8700EA3402 /* Macro */,
 				1B97D6281C2AEBE900047B96 /* UIView */,
 				1B97D5541C2AD3A300047B96 /* resouce */,
 				1B97D5261C2851C100047B96 /* Controller */,
 				1B97D4FC1C23A8C300047B96 /* Utility */,
 				1B97D4FD1C23A8C300047B96 /* Vendor */,
-				1B97D4F71C23A88000047B96 /* config */,
 				1B97D4F81C23A88000047B96 /* Model */,
 				1B97D4F91C23A88000047B96 /* Service */,
 				1B1779BC1C2020C7003ACE31 /* AppDelegate.h */,
@@ -334,20 +363,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		1B97D4F71C23A88000047B96 /* config */ = {
-			isa = PBXGroup;
-			children = (
-				1B97D51D1C24FE2E00047B96 /* config.plist */,
-			);
-			path = config;
-			sourceTree = "<group>";
-		};
 		1B97D4F81C23A88000047B96 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1BF9CCBA1C9C0ABC00EA3402 /* WYAudioType.h */,
+				1BF9CCBB1C9C0ABC00EA3402 /* WYAudioType.m */,
+				1BF9CCB41C9C09A800EA3402 /* WYModelManager.h */,
+				1BF9CCB51C9C09A800EA3402 /* WYModelManager.m */,
 				1B97D50F1C24107500047B96 /* ConfigModel */,
 				1B97D51F1C2526E600047B96 /* MFTestModel.h */,
 				1B97D5201C2526E600047B96 /* MFTestModel.m */,
+				1BF9CCAA1C9AABBC00EA3402 /* WYCharAudioModel.h */,
+				1BF9CCAB1C9AABBC00EA3402 /* WYCharAudioModel.m */,
+				1BF9CCB71C9C09DF00EA3402 /* WYAudioChat.h */,
+				1BF9CCB81C9C09DF00EA3402 /* WYAudioChat.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -360,6 +389,10 @@
 				1B97D4FF1C23B91100047B96 /* WYConfigService.m */,
 				1B97D6291C2AEF9800047B96 /* WYInterfaceService.h */,
 				1B97D62A1C2AEF9800047B96 /* WYInterfaceService.m */,
+				1BF9CCA11C9A986500EA3402 /* WYLessionService.h */,
+				1BF9CCA21C9A986500EA3402 /* WYLessionService.m */,
+				1BF9CCA41C9A9B1C00EA3402 /* WYServiceManager.h */,
+				1BF9CCA51C9A9B1C00EA3402 /* WYServiceManager.m */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -367,8 +400,12 @@
 		1B97D4FC1C23A8C300047B96 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				1BF9CCB01C9AE16F00EA3402 /* WYJsonParser.h */,
+				1BF9CCB11C9AE16F00EA3402 /* WYJsonParser.m */,
 				1B97D50C1C2405EC00047B96 /* WYJsonToModel.h */,
 				1B97D50D1C2405EC00047B96 /* WYJsonToModel.m */,
+				1B47FF871C994710007177F1 /* WYNavigationController.h */,
+				1B47FF881C994710007177F1 /* WYNavigationController.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -395,8 +432,6 @@
 				1B97D5121C2410AC00047B96 /* WYConfigHeader.h */,
 				1B97D5131C2410AC00047B96 /* WYConfigModel.h */,
 				1B97D5141C2410AC00047B96 /* WYConfigModel.m */,
-				1B97D5151C2410AC00047B96 /* WYModelManager.h */,
-				1B97D5161C2410AC00047B96 /* WYModelManager.m */,
 				1B97D51A1C2410E800047B96 /* WYConfig.h */,
 				1B97D51B1C2410E800047B96 /* WYConfig.m */,
 			);
@@ -418,6 +453,7 @@
 		1B97D5541C2AD3A300047B96 /* resouce */ = {
 			isa = PBXGroup;
 			children = (
+				1BF9CCAD1C9ADB9100EA3402 /* configurate */,
 				1B97D5551C2AD3A300047B96 /* note */,
 			);
 			path = resouce;
@@ -535,6 +571,9 @@
 		1B97D6281C2AEBE900047B96 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				1BF9CC9A1C9A8B5500EA3402 /* WYSelectView.xib */,
+				1BF9CC9C1C9A8B7200EA3402 /* WYSelectView.h */,
+				1BF9CC9D1C9A8B7200EA3402 /* WYSelectView.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -544,8 +583,25 @@
 			children = (
 				1BE4E5411C75AB69006FA06B /* WYPhonematicChartViewController.h */,
 				1BE4E5421C75AB69006FA06B /* WYPhonematicChartViewController.m */,
+				1B0BCA841C9A884900F8DB75 /* Lesson.storyboard */,
 			);
 			path = Lesson;
+			sourceTree = "<group>";
+		};
+		1BF9CC9F1C9A8E8700EA3402 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				1BF9CCA01C9A8E9900EA3402 /* WYMarco.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		1BF9CCAD1C9ADB9100EA3402 /* configurate */ = {
+			isa = PBXGroup;
+			children = (
+				1BF9CCAE1C9ADB9100EA3402 /* WYSoundmark.json */,
+			);
+			path = configurate;
 			sourceTree = "<group>";
 		};
 		794F67B2795B25F525649711 /* Pods */ = {
@@ -630,6 +686,7 @@
 				1B97D5EB1C2AD3A400047B96 /* me.wav in Resources */,
 				1B97D6131C2AD3A400047B96 /* su.wav in Resources */,
 				1B97D5DE1C2AD3A400047B96 /* ji.wav in Resources */,
+				1B0BCA851C9A884900F8DB75 /* Lesson.storyboard in Resources */,
 				1B97D5D11C2AD3A400047B96 /* go.wav in Resources */,
 				1B97D6151C2AD3A400047B96 /* te.wav in Resources */,
 				1B97D60B1C2AD3A400047B96 /* ryu.wav in Resources */,
@@ -687,6 +744,7 @@
 				1B97D5D71C2AD3A400047B96 /* he.wav in Resources */,
 				1B97D6121C2AD3A400047B96 /* so.wav in Resources */,
 				1B97D5E41C2AD3A400047B96 /* ki.wav in Resources */,
+				1BF9CCAF1C9ADB9100EA3402 /* WYSoundmark.json in Resources */,
 				1B97D5F71C2AD3A400047B96 /* nu.wav in Resources */,
 				1B97D5C11C2AD3A400047B96 /* bu.wav in Resources */,
 				1B97D6141C2AD3A400047B96 /* ta.wav in Resources */,
@@ -721,9 +779,9 @@
 				1B97D5C31C2AD3A400047B96 /* byo.wav in Resources */,
 				1B97D5C71C2AD3A400047B96 /* cho.wav in Resources */,
 				1B97D5EF1C2AD3A400047B96 /* mya.wav in Resources */,
-				1B97D51E1C24FE2E00047B96 /* config.plist in Resources */,
 				1B97D5E21C2AD3A400047B96 /* ka.wav in Resources */,
 				1B97D6011C2AD3A400047B96 /* pya.wav in Resources */,
+				1BF9CC9B1C9A8B5500EA3402 /* WYSelectView.xib in Resources */,
 				1B97D61E1C2AD3A400047B96 /* za.wav in Resources */,
 				1B97D5FA1C2AD3A400047B96 /* nyu.wav in Resources */,
 				1B97D6081C2AD3A400047B96 /* ru.wav in Resources */,
@@ -776,17 +834,25 @@
 				1B97D51C1C2410E800047B96 /* WYConfig.m in Sources */,
 				1B97D50E1C2405EC00047B96 /* WYJsonToModel.m in Sources */,
 				1B1779C11C2020C7003ACE31 /* ViewController.m in Sources */,
+				1BF9CCB21C9AE16F00EA3402 /* WYJsonParser.m in Sources */,
 				1B97D62B1C2AEF9800047B96 /* WYInterfaceService.m in Sources */,
+				1BF9CC9E1C9A8B7200EA3402 /* WYSelectView.m in Sources */,
 				1B97D5171C2410AC00047B96 /* WYConfigCore.m in Sources */,
 				1B1779BE1C2020C7003ACE31 /* AppDelegate.m in Sources */,
 				1B1779BB1C2020C7003ACE31 /* main.m in Sources */,
 				1B97D5211C2526E600047B96 /* MFTestModel.m in Sources */,
+				1BF9CCA61C9A9B1C00EA3402 /* WYServiceManager.m in Sources */,
 				1B97D6271C2AD52C00047B96 /* MFLessionViewController.m in Sources */,
+				1BF9CCA31C9A986500EA3402 /* WYLessionService.m in Sources */,
 				1B97D5001C23B91100047B96 /* WYConfigService.m in Sources */,
+				1BF9CCB91C9C09DF00EA3402 /* WYAudioChat.m in Sources */,
 				1B97D5181C2410AC00047B96 /* WYConfigModel.m in Sources */,
+				1BF9CCBC1C9C0ABC00EA3402 /* WYAudioType.m in Sources */,
+				1BF9CCB61C9C09A800EA3402 /* WYModelManager.m in Sources */,
+				1B47FF891C994710007177F1 /* WYNavigationController.m in Sources */,
 				1BE4E5431C75AB69006FA06B /* WYPhonematicChartViewController.m in Sources */,
 				1B97D6241C2AD4E900047B96 /* WYMainViewController.m in Sources */,
-				1B97D5191C2410AC00047B96 /* WYModelManager.m in Sources */,
+				1BF9CCAC1C9AABBC00EA3402 /* WYCharAudioModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

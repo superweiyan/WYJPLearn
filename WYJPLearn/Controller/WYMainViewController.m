@@ -8,6 +8,7 @@
 
 #import "WYMainViewController.h"
 #import "MFLessionViewController.h"
+#import "WYNavigationController.h"
 
 @interface WYMainViewController()
 {
@@ -27,9 +28,7 @@
     _lessionController = [[MFLessionViewController alloc] init];
     _lessionController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"首页"
                                                                   image:[UIImage imageNamed:@"cat"] tag:0];
-    
-    UINavigationController *firstNav = [[UINavigationController alloc] initWithRootViewController:_lessionController];
-    _lessionController.hidesBottomBarWhenPushed = YES;
+    WYNavigationController *firstNav = [[WYNavigationController alloc] initWithRootViewController:_lessionController];
     
     secondController = [[UIViewController alloc] init];
     secondController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"广场" image:[UIImage imageNamed:@"cow"] tag:1];
@@ -50,15 +49,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

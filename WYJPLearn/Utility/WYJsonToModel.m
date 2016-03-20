@@ -24,15 +24,20 @@
     for (int i = 0; i < keyArray.count; i++) {
         NSString *key = [keyArray objectAtIndex:i];
         id value = [dict objectForKey:key];
-        
-        for(int j = 0; j < attrArray.count; j++) {
-            NSString *str = [attrArray objectAtIndex:j];
-            
-            if ([key isEqualToString:str]) {
-                [object setValue:value forKey:key];
+       
+//        if ([value isKindOfClass:[NSDictionary class]]) {
+//            id newObject = [[NSClassFromString(key) alloc] init];
+//        }
+//        else {
+            for(int j = 0; j < attrArray.count; j++) {
+                NSString *str = [attrArray objectAtIndex:j];
+                
+                if ([key isEqualToString:str]) {
+                    [object setValue:value forKey:key];
+                }
             }
         }
-    }
+//    }
     
     return object;
 }

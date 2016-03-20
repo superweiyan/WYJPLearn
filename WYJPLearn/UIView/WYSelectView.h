@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void (^onClickedByIndexCallback)(int);
+
 @interface WYSelectView : UIView
+
+@property IBOutlet UIButton *firstButton;
+@property IBOutlet UIButton *secondButton;
+@property IBOutlet UIButton *thirdButton;
+
+@property (nonatomic, copy) onClickedByIndexCallback callback;
 
 @end

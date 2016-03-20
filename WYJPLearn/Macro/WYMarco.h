@@ -9,5 +9,8 @@
 #ifndef WYMarco_h
 #define WYMarco_h
 
+#define WYWeakSelf __weak typeof(self) weakSelf = self;
+
+#define safeCallblock(block, ...) if((block)) { block(__VA_ARGS__); }
 
 #endif /* WYMarco_h */

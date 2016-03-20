@@ -15,7 +15,6 @@ CGFloat kWYGigHeight = 110;
 @interface MFLessionViewController()<UITableViewDelegate, UITableViewDataSource>
 {
     UITableView *_tableView;
-    
     NSArray *_lessonTitle;
 }
 @end
@@ -68,8 +67,8 @@ CGFloat kWYGigHeight = 110;
     switch (indexPath.row) {
         case 0:
         {
-            WYPhonematicChartViewController *viewController = [[WYPhonematicChartViewController alloc] init];
-            [self.navigationController pushViewController:viewController animated:YES];
+            WYPhonematicChartViewController *controller = [[UIStoryboard storyboardWithName:@"Lesson" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"WYPhonematicChartViewController"];
+            [self.navigationController pushViewController:controller animated:YES];
         }
             break;
         case 1:

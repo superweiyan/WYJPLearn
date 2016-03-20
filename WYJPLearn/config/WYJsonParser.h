@@ -10,4 +10,6 @@
 
 @interface WYJsonParser : NSObject
 
++ (NSDictionary *)loadLocalJson:(NSString *)fileName;
+
 @end

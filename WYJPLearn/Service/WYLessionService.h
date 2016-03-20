@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "WYAudioType.h"
 
 @interface WYLessionService : NSObject
 
+- (NSArray *)getAudioArrayByType:(WYAudioType)type;
+
 @end
+

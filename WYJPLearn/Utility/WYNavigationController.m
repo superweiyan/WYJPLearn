@@ -24,6 +24,31 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    NSArray *controllers = self.viewControllers;
+    if (controllers.count == 1) {
+        viewController.hidesBottomBarWhenPushed = YES;
+    }
+    [super pushViewController:viewController animated:YES];
+    
+//    NSArray *controllers1 = self.viewControllers;
+//    if (controllers1.count == 1) {
+//        viewController.hidesBottomBarWhenPushed = NO;
+//    }
+}
+
+- (nullable UIViewController *)popViewControllerAnimated:(BOOL)animated
+{
+    UIViewController *popViewController = [super popViewControllerAnimated:animated];
+//    NSArray *controllers = self.viewControllers;
+//    if (controllers.count == 1) {
+//        UIViewController *controller = [controllers objectAtIndex:0];
+//        controller.hidesBottomBarWhenPushed = NO;
+//    }
+    return popViewController;
+}
+
 /*
 #pragma mark - Navigation
 

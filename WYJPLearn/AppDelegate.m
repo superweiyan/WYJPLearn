@@ -10,6 +10,7 @@
 #import "WYConfigService.h"
 #import "WYModelManager.h"
 #import "WYInterfaceService.h"
+#import "WYServiceManager.h"
 
 @interface AppDelegate ()
 
@@ -23,6 +24,7 @@
     
     [WYModelManager sharedObject];
     [WYConfigService sharedObject];
+    [[WYServiceManager sharedObject] registerServiceName:@"WYLessionService"];
     [[WYInterfaceService sharedObject] showMainViewController];
     
     return YES;

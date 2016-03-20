@@ -35,7 +35,7 @@
     _mainViewController = [[WYMainViewController alloc] init];
     _mainViewController.delegate = self;
     
-    AppDelegate *appDelegate=[[UIApplication sharedApplication] delegate];
+    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
     
     appDelegate.window.rootViewController = _mainViewController;
     [appDelegate.window makeKeyAndVisible];
