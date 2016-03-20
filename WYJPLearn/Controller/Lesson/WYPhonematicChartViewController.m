@@ -12,6 +12,7 @@
 #import "WYServiceManager.h"
 #import "WYLessionService.h"
 #import "WYAudioChat.h"
+#import "WYAudioFontCollectionViewCell.h"
 
 @interface WYPhonematicChartViewController ()<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 {
@@ -26,11 +27,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
-//    UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout alloc] init
-    
-    [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"wyNoteIndentifier"];
+    [self initViews];
     
     WYWeakSelf
     _selectView.callback = ^(int index){
@@ -47,8 +45,15 @@
 - (void)initViews
 {
     [_selectView.firstButton setTitle:@"五十音" forState:UIControlStateNormal];
-    [_selectView.firstButton setTitle:@"浊音" forState:UIControlStateNormal];
-    [_selectView.firstButton setTitle:@"拗音" forState:UIControlStateNormal];
+    [_selectView.secondButton setTitle:@"浊音" forState:UIControlStateNormal];
+    [_selectView.thirdButton setTitle:@"拗音" forState:UIControlStateNormal];
+    
+//    [_collectionView registerClass:[WYAudioFontCollectionViewCell class]
+//        forCellWithReuseIdentifier:@"wyNoteIndentifier"];
+    
+    UINib *nib = [UINib nibWithNibName:@"WYAudioFontCollectionViewCell"
+                                bundle: [NSBundle mainBundle]];
+    [_collectionView registerNib:nib forCellWithReuseIdentifier:@"wyNoteIndentifier"];
 }
 
 #pragma mark callback
@@ -67,24 +72,38 @@
     return _noteArray.count;
 }
 
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
+                  cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"wyNoteIndentifier" forIndexPath:indexPath];
+    WYAudioFontCollectionViewCell *cell = [collectionView
+                                  dequeueReusableCellWithReuseIdentifier:@"wyNoteIndentifier"
+                                  forIndexPath:indexPath];
     cell.backgroundColor = [UIColor redColor];
 
     WYAudioChat *audioChat = [_noteArray objectAtIndex:indexPath.row];
-    UILabel *romanLabel = [[UILabel alloc] initWithFrame:cell.bounds];
-    romanLabel.text = audioChat.romanName;
-    [cell.contentView addSubview:romanLabel];
+    
+//    WYAudioFontView *view = [[WYAudioFontView alloc] initWithFrame:cell.bounds];
+//    romanLabel.textAlignment = NSTextAlignmentCenter;
+    cell.firstLabel.text = audioChat.romanName;
+    cell.secondLabel.text = audioChat.KataKanaName;
+    cell.thirdLabel.text = audioChat.HiraganaName;
     
     return cell;
 }
 
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-//    CGFloat randomHeight = 80 + (arc4random() % 150);
+- (CGSize)collectionView:(UICollectionView *)collectionView
+                  layout:(UICollectionViewLayout*)collectionViewLayout
+  sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
     CGFloat viewWidth = (width - 4 * 5 - 2 * 5) / 5;
     return CGSizeMake(viewWidth, 80);
+}
+
+- (void)collectionView:(UICollectionView *)collectionView
+                        didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    
 }
 
 #pragma mark private

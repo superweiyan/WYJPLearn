@@ -137,6 +137,8 @@
 		1BF9CCB61C9C09A800EA3402 /* WYModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF9CCB51C9C09A800EA3402 /* WYModelManager.m */; };
 		1BF9CCB91C9C09DF00EA3402 /* WYAudioChat.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF9CCB81C9C09DF00EA3402 /* WYAudioChat.m */; };
 		1BF9CCBC1C9C0ABC00EA3402 /* WYAudioType.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF9CCBB1C9C0ABC00EA3402 /* WYAudioType.m */; };
+		1BF9CCBE1C9E7FC000EA3402 /* WYAudioFontCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BF9CCBD1C9E7FC000EA3402 /* WYAudioFontCollectionViewCell.xib */; };
+		1BF9CCC41C9E8AB500EA3402 /* WYAudioFontCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF9CCC31C9E8AB500EA3402 /* WYAudioFontCollectionViewCell.m */; };
 		2A82D77B7C7C71F077F4191E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A790EED4B96D8F28C467F5 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -297,6 +299,9 @@
 		1BF9CCB81C9C09DF00EA3402 /* WYAudioChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYAudioChat.m; sourceTree = "<group>"; };
 		1BF9CCBA1C9C0ABC00EA3402 /* WYAudioType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYAudioType.h; sourceTree = "<group>"; };
 		1BF9CCBB1C9C0ABC00EA3402 /* WYAudioType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYAudioType.m; sourceTree = "<group>"; };
+		1BF9CCBD1C9E7FC000EA3402 /* WYAudioFontCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WYAudioFontCollectionViewCell.xib; sourceTree = "<group>"; };
+		1BF9CCC21C9E8AB500EA3402 /* WYAudioFontCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYAudioFontCollectionViewCell.h; sourceTree = "<group>"; };
+		1BF9CCC31C9E8AB500EA3402 /* WYAudioFontCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYAudioFontCollectionViewCell.m; sourceTree = "<group>"; };
 		2975366E093244D5F3D32E11 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F5A790EED4B96D8F28C467F5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -574,6 +579,9 @@
 				1BF9CC9A1C9A8B5500EA3402 /* WYSelectView.xib */,
 				1BF9CC9C1C9A8B7200EA3402 /* WYSelectView.h */,
 				1BF9CC9D1C9A8B7200EA3402 /* WYSelectView.m */,
+				1BF9CCBD1C9E7FC000EA3402 /* WYAudioFontCollectionViewCell.xib */,
+				1BF9CCC21C9E8AB500EA3402 /* WYAudioFontCollectionViewCell.h */,
+				1BF9CCC31C9E8AB500EA3402 /* WYAudioFontCollectionViewCell.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -716,6 +724,7 @@
 				1B97D5D41C2AD3A400047B96 /* gyo.wav in Resources */,
 				1B97D5D91C2AD3A400047B96 /* ho.wav in Resources */,
 				1B97D5ED1C2AD3A400047B96 /* mo.wav in Resources */,
+				1BF9CCBE1C9E7FC000EA3402 /* WYAudioFontCollectionViewCell.xib in Resources */,
 				1B97D5DA1C2AD3A400047B96 /* hya.wav in Resources */,
 				1B97D5DB1C2AD3A400047B96 /* hyo.wav in Resources */,
 				1B1779C61C2020C7003ACE31 /* Assets.xcassets in Resources */,
@@ -839,6 +848,7 @@
 				1BF9CC9E1C9A8B7200EA3402 /* WYSelectView.m in Sources */,
 				1B97D5171C2410AC00047B96 /* WYConfigCore.m in Sources */,
 				1B1779BE1C2020C7003ACE31 /* AppDelegate.m in Sources */,
+				1BF9CCC41C9E8AB500EA3402 /* WYAudioFontCollectionViewCell.m in Sources */,
 				1B1779BB1C2020C7003ACE31 /* main.m in Sources */,
 				1B97D5211C2526E600047B96 /* MFTestModel.m in Sources */,
 				1BF9CCA61C9A9B1C00EA3402 /* WYServiceManager.m in Sources */,
