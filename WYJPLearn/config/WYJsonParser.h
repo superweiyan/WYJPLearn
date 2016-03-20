@@ -1,5 +1,5 @@
 //
-//  WYCharAudioModel.h
+//  WYJsonParser.h
 //  WYJPLearn
 //
 //  Created by weiyan on 16/3/17.
@@ -7,10 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "WYAudioType.h"
 
-@interface WYCharAudioModel : NSObject
-
-- (NSArray *)getAudioArrayByType:(WYAudioType)type;
+@interface WYJsonParser : NSObject
 
 @end
