@@ -13,6 +13,7 @@
 #import "WYLessionService.h"
 #import "WYAudioChat.h"
 #import "WYAudioFontCollectionViewCell.h"
+#import "WYAudioPlayUtils.h"
 
 @interface WYPhonematicChartViewController ()<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 {
@@ -20,6 +21,8 @@
     IBOutlet WYSelectView       *_selectView;
     
     NSArray                     *_noteArray;
+    
+    WYAudioPlayUtils            *_audioPlayUtils;
 }
 @end
 
@@ -47,9 +50,6 @@
     [_selectView.firstButton setTitle:@"五十音" forState:UIControlStateNormal];
     [_selectView.secondButton setTitle:@"浊音" forState:UIControlStateNormal];
     [_selectView.thirdButton setTitle:@"拗音" forState:UIControlStateNormal];
-    
-//    [_collectionView registerClass:[WYAudioFontCollectionViewCell class]
-//        forCellWithReuseIdentifier:@"wyNoteIndentifier"];
     
     UINib *nib = [UINib nibWithNibName:@"WYAudioFontCollectionViewCell"
                                 bundle: [NSBundle mainBundle]];
@@ -82,8 +82,6 @@
 
     WYAudioChat *audioChat = [_noteArray objectAtIndex:indexPath.row];
     
-//    WYAudioFontView *view = [[WYAudioFontView alloc] initWithFrame:cell.bounds];
-//    romanLabel.textAlignment = NSTextAlignmentCenter;
     cell.firstLabel.text = audioChat.romanName;
     cell.secondLabel.text = audioChat.KataKanaName;
     cell.thirdLabel.text = audioChat.HiraganaName;
@@ -103,7 +101,13 @@
 - (void)collectionView:(UICollectionView *)collectionView
                         didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    if (indexPath.row < _noteArray.count) {
+        WYAudioChat *audioChat = [_noteArray objectAtIndex:indexPath.row];
+        if (!_audioPlayUtils) {
+            _audioPlayUtils = [[WYAudioPlayUtils alloc] init];
+        }
+        [_audioPlayUtils playLocalRresouce:audioChat.romanName];
+    }
 }
 
 #pragma mark private

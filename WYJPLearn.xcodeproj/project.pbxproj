@@ -139,6 +139,8 @@
 		1BF9CCBC1C9C0ABC00EA3402 /* WYAudioType.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF9CCBB1C9C0ABC00EA3402 /* WYAudioType.m */; };
 		1BF9CCBE1C9E7FC000EA3402 /* WYAudioFontCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BF9CCBD1C9E7FC000EA3402 /* WYAudioFontCollectionViewCell.xib */; };
 		1BF9CCC41C9E8AB500EA3402 /* WYAudioFontCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF9CCC31C9E8AB500EA3402 /* WYAudioFontCollectionViewCell.m */; };
+		1BF9CCC61C9FA45B00EA3402 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF9CCC51C9FA45B00EA3402 /* AVFoundation.framework */; };
+		1BF9CCC91C9FA47E00EA3402 /* WYAudioPlayUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF9CCC81C9FA47E00EA3402 /* WYAudioPlayUtils.m */; };
 		2A82D77B7C7C71F077F4191E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A790EED4B96D8F28C467F5 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -302,6 +304,9 @@
 		1BF9CCBD1C9E7FC000EA3402 /* WYAudioFontCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WYAudioFontCollectionViewCell.xib; sourceTree = "<group>"; };
 		1BF9CCC21C9E8AB500EA3402 /* WYAudioFontCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYAudioFontCollectionViewCell.h; sourceTree = "<group>"; };
 		1BF9CCC31C9E8AB500EA3402 /* WYAudioFontCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYAudioFontCollectionViewCell.m; sourceTree = "<group>"; };
+		1BF9CCC51C9FA45B00EA3402 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1BF9CCC71C9FA47E00EA3402 /* WYAudioPlayUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYAudioPlayUtils.h; sourceTree = "<group>"; };
+		1BF9CCC81C9FA47E00EA3402 /* WYAudioPlayUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYAudioPlayUtils.m; sourceTree = "<group>"; };
 		2975366E093244D5F3D32E11 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F5A790EED4B96D8F28C467F5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -311,6 +316,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BF9CCC61C9FA45B00EA3402 /* AVFoundation.framework in Frameworks */,
 				2A82D77B7C7C71F077F4191E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +417,8 @@
 				1B97D50D1C2405EC00047B96 /* WYJsonToModel.m */,
 				1B47FF871C994710007177F1 /* WYNavigationController.h */,
 				1B47FF881C994710007177F1 /* WYNavigationController.m */,
+				1BF9CCC71C9FA47E00EA3402 /* WYAudioPlayUtils.h */,
+				1BF9CCC81C9FA47E00EA3402 /* WYAudioPlayUtils.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -624,6 +632,7 @@
 		7E4E6C1C2DE9BCCEFEDB5F36 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1BF9CCC51C9FA45B00EA3402 /* AVFoundation.framework */,
 				F5A790EED4B96D8F28C467F5 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -854,6 +863,7 @@
 				1BF9CCA61C9A9B1C00EA3402 /* WYServiceManager.m in Sources */,
 				1B97D6271C2AD52C00047B96 /* MFLessionViewController.m in Sources */,
 				1BF9CCA31C9A986500EA3402 /* WYLessionService.m in Sources */,
+				1BF9CCC91C9FA47E00EA3402 /* WYAudioPlayUtils.m in Sources */,
 				1B97D5001C23B91100047B96 /* WYConfigService.m in Sources */,
 				1BF9CCB91C9C09DF00EA3402 /* WYAudioChat.m in Sources */,
 				1B97D5181C2410AC00047B96 /* WYConfigModel.m in Sources */,
