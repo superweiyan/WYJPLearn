@@ -8,11 +8,23 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ENUM(NSUInteger, WYTraningParserType) {
-   WYTraningParserAudioType = 0,
-   WYTraningParserWordType = 1
-};
-
 @interface WYTrainingType : NSObject
+
+@end
+
+@interface WYTrainingItemWithThree : NSObject
+
+@property (nonatomic, copy) NSString *firstItem;
+@property (nonatomic, copy) NSString *secondItem;
+@property (nonatomic, copy) NSString *thirthItem;
+
+@end
+
+@interface WYTraningQuestion : NSObject
+
+@property (nonatomic, copy) NSString *question;
+@property (nonatomic, copy) NSString *answer;
+@property (nonatomic, copy) NSString *fakeAnswerOne;
+@property (nonatomic, copy) NSString *fakeAnswerTwo;
 
 @end

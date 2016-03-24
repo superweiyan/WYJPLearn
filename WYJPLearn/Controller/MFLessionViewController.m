@@ -14,8 +14,8 @@ CGFloat kWYGigHeight = 110;
 
 @interface MFLessionViewController()<UITableViewDelegate, UITableViewDataSource>
 {
-    UITableView *_tableView;
-    NSArray *_lessonTitle;
+    UITableView     *_tableView;
+    NSArray         *_lessonTitle;
 }
 @end
 

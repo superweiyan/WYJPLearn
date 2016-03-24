@@ -9,12 +9,13 @@
 #import "WYMainViewController.h"
 #import "MFLessionViewController.h"
 #import "WYNavigationController.h"
+#import "WYAudioExampleViewController.h"
 
 @interface WYMainViewController()
 {
-    MFLessionViewController *_lessionController;
-    UIViewController        *secondController;
-    UIViewController        *thirdController;
+    MFLessionViewController             *_lessionController;
+    UIViewController                    *secondController;
+    WYAudioExampleViewController        *_thirdController;
     UIViewController        *fourController;
 }
 @end
@@ -34,9 +35,10 @@
     secondController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"广场" image:[UIImage imageNamed:@"cow"] tag:1];
     UINavigationController *secondNav = [[UINavigationController alloc] initWithRootViewController:secondController];
     
-    thirdController = [[UIViewController alloc] init];
-    thirdController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"消息" image:[UIImage imageNamed:@"dog"] tag:2];
-    UINavigationController *thirdNav = [[UINavigationController alloc] initWithRootViewController:thirdController];
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"WYExample" bundle:[NSBundle mainBundle]];
+    _thirdController =  [storyBoard instantiateViewControllerWithIdentifier:@"WYAudioExampleViewController"];
+    _thirdController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"考试" image:[UIImage imageNamed:@"dog"] tag:2];
+    UINavigationController *thirdNav = [[UINavigationController alloc] initWithRootViewController:_thirdController];
     
     fourController = [[UIViewController alloc] init];
     fourController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"我" image:[UIImage imageNamed:@"duck"] tag:3];

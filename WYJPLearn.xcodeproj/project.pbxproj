@@ -128,6 +128,11 @@
 		1B97D62B1C2AEF9800047B96 /* WYInterfaceService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B97D62A1C2AEF9800047B96 /* WYInterfaceService.m */; };
 		1BE4E5431C75AB69006FA06B /* WYPhonematicChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE4E5421C75AB69006FA06B /* WYPhonematicChartViewController.m */; };
 		1BF74B691CA2E82D00BB1D16 /* WYAudioTraning.json in Resources */ = {isa = PBXBuildFile; fileRef = 1BF74B681CA2E82D00BB1D16 /* WYAudioTraning.json */; };
+		1BF74B6C1CA3C36A00BB1D16 /* WYContentParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF74B6B1CA3C36A00BB1D16 /* WYContentParse.m */; };
+		1BF74B6F1CA3D3B800BB1D16 /* WYTraniningEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF74B6E1CA3D3B800BB1D16 /* WYTraniningEnum.m */; };
+		1BF74B731CA3E90F00BB1D16 /* WYAudioExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF74B721CA3E90F00BB1D16 /* WYAudioExampleViewController.m */; };
+		1BF74B761CA3E97F00BB1D16 /* WYExampleService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF74B751CA3E97F00BB1D16 /* WYExampleService.m */; };
+		1BF74B781CA42FEE00BB1D16 /* WYExample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF74B771CA42FEE00BB1D16 /* WYExample.storyboard */; };
 		1BF9CC9B1C9A8B5500EA3402 /* WYSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BF9CC9A1C9A8B5500EA3402 /* WYSelectView.xib */; };
 		1BF9CC9E1C9A8B7200EA3402 /* WYSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF9CC9D1C9A8B7200EA3402 /* WYSelectView.m */; };
 		1BF9CCA31C9A986500EA3402 /* WYLessionService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF9CCA21C9A986500EA3402 /* WYLessionService.m */; };
@@ -287,6 +292,15 @@
 		1BE4E5411C75AB69006FA06B /* WYPhonematicChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYPhonematicChartViewController.h; sourceTree = "<group>"; };
 		1BE4E5421C75AB69006FA06B /* WYPhonematicChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYPhonematicChartViewController.m; sourceTree = "<group>"; };
 		1BF74B681CA2E82D00BB1D16 /* WYAudioTraning.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WYAudioTraning.json; sourceTree = "<group>"; };
+		1BF74B6A1CA3C36A00BB1D16 /* WYContentParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYContentParse.h; sourceTree = "<group>"; };
+		1BF74B6B1CA3C36A00BB1D16 /* WYContentParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYContentParse.m; sourceTree = "<group>"; };
+		1BF74B6D1CA3D3B800BB1D16 /* WYTraniningEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYTraniningEnum.h; sourceTree = "<group>"; };
+		1BF74B6E1CA3D3B800BB1D16 /* WYTraniningEnum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYTraniningEnum.m; sourceTree = "<group>"; };
+		1BF74B711CA3E90F00BB1D16 /* WYAudioExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYAudioExampleViewController.h; sourceTree = "<group>"; };
+		1BF74B721CA3E90F00BB1D16 /* WYAudioExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYAudioExampleViewController.m; sourceTree = "<group>"; };
+		1BF74B741CA3E97F00BB1D16 /* WYExampleService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYExampleService.h; sourceTree = "<group>"; };
+		1BF74B751CA3E97F00BB1D16 /* WYExampleService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYExampleService.m; sourceTree = "<group>"; };
+		1BF74B771CA42FEE00BB1D16 /* WYExample.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WYExample.storyboard; sourceTree = "<group>"; };
 		1BF9CC9A1C9A8B5500EA3402 /* WYSelectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WYSelectView.xib; sourceTree = "<group>"; };
 		1BF9CC9C1C9A8B7200EA3402 /* WYSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYSelectView.h; sourceTree = "<group>"; };
 		1BF9CC9D1C9A8B7200EA3402 /* WYSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYSelectView.m; sourceTree = "<group>"; };
@@ -417,6 +431,8 @@
 				1BF9CCA21C9A986500EA3402 /* WYLessionService.m */,
 				1BF9CCA41C9A9B1C00EA3402 /* WYServiceManager.h */,
 				1BF9CCA51C9A9B1C00EA3402 /* WYServiceManager.m */,
+				1BF74B741CA3E97F00BB1D16 /* WYExampleService.h */,
+				1BF74B751CA3E97F00BB1D16 /* WYExampleService.m */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -467,6 +483,7 @@
 		1B97D5261C2851C100047B96 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1BF74B701CA3E8F900BB1D16 /* Example */,
 				1BE4E5401C75AA02006FA06B /* Lesson */,
 				1B97D6221C2AD4E900047B96 /* WYMainViewController.h */,
 				1B97D6231C2AD4E900047B96 /* WYMainViewController.m */,
@@ -617,6 +634,16 @@
 			path = Lesson;
 			sourceTree = "<group>";
 		};
+		1BF74B701CA3E8F900BB1D16 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				1BF74B711CA3E90F00BB1D16 /* WYAudioExampleViewController.h */,
+				1BF74B721CA3E90F00BB1D16 /* WYAudioExampleViewController.m */,
+				1BF74B771CA42FEE00BB1D16 /* WYExample.storyboard */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
 		1BF9CC9F1C9A8E8700EA3402 /* Macro */ = {
 			isa = PBXGroup;
 			children = (
@@ -659,6 +686,10 @@
 				1BF9CCD41CA2345D00EA3402 /* WYTrainingEngine.m */,
 				1BF9CCD81CA2379D00EA3402 /* WYTrainingType.h */,
 				1BF9CCD91CA2379D00EA3402 /* WYTrainingType.m */,
+				1BF74B6A1CA3C36A00BB1D16 /* WYContentParse.h */,
+				1BF74B6B1CA3C36A00BB1D16 /* WYContentParse.m */,
+				1BF74B6D1CA3D3B800BB1D16 /* WYTraniningEnum.h */,
+				1BF74B6E1CA3D3B800BB1D16 /* WYTraniningEnum.m */,
 			);
 			name = TrainingEngine;
 			sourceTree = "<group>";
@@ -836,6 +867,7 @@
 				1B97D5F31C2AD3A400047B96 /* na.wav in Resources */,
 				1B97D6001C2AD3A400047B96 /* pu.wav in Resources */,
 				1B97D5C51C2AD3A400047B96 /* cha.wav in Resources */,
+				1BF74B781CA42FEE00BB1D16 /* WYExample.storyboard in Resources */,
 				1B97D5BD1C2AD3A400047B96 /* ba.wav in Resources */,
 				1B97D5FF1C2AD3A400047B96 /* po.wav in Resources */,
 				1B97D5DF1C2AD3A400047B96 /* jya.wav in Resources */,
@@ -901,6 +933,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B97D51C1C2410E800047B96 /* WYConfig.m in Sources */,
+				1BF74B6C1CA3C36A00BB1D16 /* WYContentParse.m in Sources */,
+				1BF74B731CA3E90F00BB1D16 /* WYAudioExampleViewController.m in Sources */,
 				1B97D50E1C2405EC00047B96 /* WYJsonToModel.m in Sources */,
 				1B1779C11C2020C7003ACE31 /* ViewController.m in Sources */,
 				1BF9CCDA1CA2379D00EA3402 /* WYTrainingType.m in Sources */,
@@ -909,6 +943,7 @@
 				1BF9CC9E1C9A8B7200EA3402 /* WYSelectView.m in Sources */,
 				1B97D5171C2410AC00047B96 /* WYConfigCore.m in Sources */,
 				1B1779BE1C2020C7003ACE31 /* AppDelegate.m in Sources */,
+				1BF74B6F1CA3D3B800BB1D16 /* WYTraniningEnum.m in Sources */,
 				1BF9CCC41C9E8AB500EA3402 /* WYAudioFontCollectionViewCell.m in Sources */,
 				1B1779BB1C2020C7003ACE31 /* main.m in Sources */,
 				1B97D5211C2526E600047B96 /* MFTestModel.m in Sources */,
@@ -916,6 +951,7 @@
 				1B97D6271C2AD52C00047B96 /* MFLessionViewController.m in Sources */,
 				1BF9CCA31C9A986500EA3402 /* WYLessionService.m in Sources */,
 				1BF9CCC91C9FA47E00EA3402 /* WYAudioPlayUtils.m in Sources */,
+				1BF74B761CA3E97F00BB1D16 /* WYExampleService.m in Sources */,
 				1B97D5001C23B91100047B96 /* WYConfigService.m in Sources */,
 				1BF9CCB91C9C09DF00EA3402 /* WYAudioChat.m in Sources */,
 				1B97D5181C2410AC00047B96 /* WYConfigModel.m in Sources */,

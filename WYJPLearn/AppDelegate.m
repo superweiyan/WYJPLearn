@@ -25,6 +25,7 @@
     [WYModelManager sharedObject];
     [WYConfigService sharedObject];
     [[WYServiceManager sharedObject] registerServiceName:@"WYLessionService"];
+    [[WYServiceManager sharedObject] registerServiceName:@"WYExampleService"];
     [[WYInterfaceService sharedObject] showMainViewController];
     
     return YES;

@@ -11,3 +11,11 @@
 @implementation WYTrainingType
 
 @end
+
+@implementation WYTrainingItemWithThree
+
+@end
+
+@implementation WYTraningQuestion
+
+@end
