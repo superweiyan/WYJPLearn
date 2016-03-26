@@ -66,6 +66,9 @@
                                     <constraint firstAttribute="height" constant="30" id="epF-fb-x7L"/>
                                 </constraints>
                                 <state key="normal" title="下一个"/>
+                                <connections>
+                                    <action selector="onNextClicked:" destination="gvM-k3-VlV" eventType="touchUpInside" id="3K9-3W-HMQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

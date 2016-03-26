@@ -82,6 +82,8 @@
     return unsortArray;
 }
 
+#pragma mark button clicked
+
 - (IBAction)onAnswerOneBtnClicked:(id)sender
 {
     UIButton *btn = (UIButton *)sender;
@@ -102,6 +104,13 @@
     NSString *title = btn.titleLabel.text;
     [self checkAnswerRight:title];
 }
+
+- (IBAction)onNextClicked:(id)sender
+{
+    [self generateQuestion];
+}
+
+#pragma mark private
 
 - (BOOL)checkAnswerRight:(NSString *)answer
 {

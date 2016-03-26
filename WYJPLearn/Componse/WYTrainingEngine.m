@@ -69,8 +69,6 @@
     if (WYTraningParserAudioType == parseType) {
         return [self createQuestion:option];
     }
-
-    
     return nil;
 }
 
