@@ -88,16 +88,50 @@
 
     unsigned count;
     objc_property_t *properties = class_copyPropertyList([WYTrainingItemWithThree class], &count);
-    if(paramOption < count) {
-        objc_property_t property = properties[paramOption];
+    
+    NSMutableArray *valueArray = [[NSMutableArray alloc] init];
+    for (int i = 0; i < count; i++) {
+        objc_property_t property = properties[i];
         NSString *name = [NSString stringWithUTF8String:property_getName(property)];
-     
         NSString *value = [itemInfo valueForKey:name];
-        NSLog(@"%@", value);
-        question.question = value;
-        
+        [valueArray addObject:value];
     }
+
+    NSString *questionString = [valueArray objectAtIndex:paramOption];
+    question.fakeAnswerOne = [self createFakeAnswer:keyIndex optionIndex:paramOption];
+    question.fakeAnswerTwo = [self createFakeAnswer:keyIndex optionIndex:paramOption];
+    
+    paramOption = (paramOption == 1 ? 2 : 1);
+    NSString *answerString = [valueArray objectAtIndex:paramOption];
+    question.question = questionString;
+    question.answer = answerString;
     return question;
+}
+
+- (NSString *)createFakeAnswer:(NSUInteger)answerKey optionIndex:(NSUInteger)optionIndex
+{
+    NSUInteger fakeIndex = arc4random() % _currentContentArray.count;
+    while (answerKey == fakeIndex) {
+        fakeIndex = arc4random() % _currentContentArray.count;
+    }
+    
+    WYTrainingItemWithThree *itemInfo = [_currentContentArray objectAtIndex:fakeIndex];
+    
+    NSString *propertyName = [self getProperty:itemInfo propertyIndex:optionIndex];
+    return propertyName;
+}
+
+- (NSString *)getProperty:(id)object propertyIndex:(NSUInteger)propertyIndex
+{
+    unsigned count;
+    objc_property_t *properties = class_copyPropertyList([WYTrainingItemWithThree class], &count);
+    if (propertyIndex < count) {
+        objc_property_t property = properties[propertyIndex];
+        NSString *name = [NSString stringWithUTF8String:property_getName(property)];
+        NSString *value = [object valueForKey:name];
+        return value;
+    }
+    return nil;
 }
 
 @end
