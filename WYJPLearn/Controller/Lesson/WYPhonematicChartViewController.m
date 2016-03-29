@@ -21,7 +21,6 @@
     IBOutlet WYSelectView       *_selectView;
     
     NSArray                     *_noteArray;
-    
     WYAudioPlayUtils            *_audioPlayUtils;
 }
 @end
@@ -51,9 +50,11 @@
     [_selectView.secondButton setTitle:@"浊音" forState:UIControlStateNormal];
     [_selectView.thirdButton setTitle:@"拗音" forState:UIControlStateNormal];
     
-    UINib *nib = [UINib nibWithNibName:@"WYAudioFontCollectionViewCell"
-                                bundle: [NSBundle mainBundle]];
-    [_collectionView registerNib:nib forCellWithReuseIdentifier:@"wyNoteIndentifier"];
+//    UINib *nib = [UINib nibWithNibName:@"WYAudioFontCollectionViewCell"
+//                                bundle: [NSBundle mainBundle]];
+//    [_collectionView registerNib:nib forCellWithReuseIdentifier:@"wyNoteIndentifier"];
+    
+//    [_collectionView registerClass:[WYAudioFontCollectionViewCell class] forCellWithReuseIdentifier:@"wyNoteIndentifier"];
 }
 
 #pragma mark callback
@@ -80,23 +81,39 @@
                                   forIndexPath:indexPath];
     cell.backgroundColor = [UIColor redColor];
 
-    WYAudioChat *audioChat = [_noteArray objectAtIndex:indexPath.row];
-    
-    cell.firstLabel.text = audioChat.romanName;
-    cell.secondLabel.text = audioChat.KataKanaName;
-    cell.thirdLabel.text = audioChat.HiraganaName;
+    if (indexPath.row < _noteArray.count) {
+        WYAudioChat *audioChat = [_noteArray objectAtIndex:indexPath.row];
+        
+        cell.firstLabel.text = audioChat.romanName;
+        cell.secondLabel.text = audioChat.KataKanaName;
+        cell.thirdLabel.text = audioChat.HiraganaName;
+    }
     
     return cell;
 }
 
-- (CGSize)collectionView:(UICollectionView *)collectionView
-                  layout:(UICollectionViewLayout*)collectionViewLayout
-  sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    
-    CGFloat width = [UIScreen mainScreen].bounds.size.width;
-    CGFloat viewWidth = (width - 4 * 5 - 2 * 5) / 5;
-    return CGSizeMake(viewWidth, 80);
-}
+//- (CGSize)collectionView:(UICollectionView *)collectionView
+//                  layout:(UICollectionViewLayout*)collectionViewLayout
+//  sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+//    
+//    CGFloat width = [UIScreen mainScreen].bounds.size.width;
+//    CGFloat viewWidth = (width - 4 * 5 - 2 * 5) / 2;
+//    return CGSizeMake(viewWidth, 80);
+//}
+
+//- (CGSize)collectionView:(UICollectionView *)collectionView
+//                  layout:(UICollectionViewLayout*)collectionViewLayout
+//referenceSizeForHeaderInSection:(NSInteger)section
+//{
+//    return CGSizeZero;
+//}
+
+//- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView
+//                        layout:(UICollectionViewLayout*)collectionViewLayout
+//        insetForSectionAtIndex:(NSInteger)section
+//{
+//    return UIEdgeInsetsMake(0, 0, 0, 0);
+//}
 
 - (void)collectionView:(UICollectionView *)collectionView
                         didSelectItemAtIndexPath:(NSIndexPath *)indexPath

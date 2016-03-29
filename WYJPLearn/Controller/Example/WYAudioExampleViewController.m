@@ -10,6 +10,7 @@
 #import "WYServiceManager.h"
 #import "WYExampleService.h"
 #import "WYTrainingType.h"
+#import "WYNumberUtils.h"
 
 @interface WYAudioExampleViewController ()
 {
@@ -55,32 +56,16 @@
                                   _trainingQuestion.fakeAnswerOne,
                                   _trainingQuestion.fakeAnswerTwo];
     
-    NSArray *queue = [self genernateNumber:itemArray.count];
+    NSArray *numberQueue = [WYNumberUtils genernateNumber:itemArray.count];
     
-    for (int i = 0; i < queue.count; i++) {
-        NSNumber *index = [queue objectAtIndex:i];
+    for (int i = 0; i < numberQueue.count; i++) {
+        NSNumber *index = [numberQueue objectAtIndex:i];
         NSString *answerString = [itemArray objectAtIndex:index.longLongValue];
         UIButton *btn = [self.view viewWithTag:(i+1)];
         [btn setTitle:answerString forState:UIControlStateNormal];
     }
 }
 
-- (NSArray *)genernateNumber:(NSUInteger)count
-{
-    NSMutableArray *array = [[NSMutableArray alloc] init];
-    for (int i = 0; i < count; i++) {
-        [array addObject:@(i)];
-    }
-    NSMutableArray *unsortArray = [[NSMutableArray alloc] init];
-    
-    while (array.count > 0) {
-        NSUInteger unsortIndex = arc4random() % array.count;
-        NSNumber *selectIndex = [array objectAtIndex:unsortIndex];
-        [unsortArray addObject:selectIndex];
-        [array removeObjectAtIndex:unsortIndex];
-    }
-    return unsortArray;
-}
 
 #pragma mark button clicked
 
