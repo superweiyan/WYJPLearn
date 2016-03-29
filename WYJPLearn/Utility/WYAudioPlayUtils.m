@@ -9,7 +9,7 @@
 #import "WYAudioPlayUtils.h"
 #import <AVFoundation/AVFoundation.h>
 
-@interface WYAudioPlayUtils()
+@interface WYAudioPlayUtils()<AVAudioPlayerDelegate>
 {
     AVAudioPlayer *_audioPlayer;
 }
@@ -29,10 +29,18 @@
         return ;
     }
     NSURL *url = [NSURL fileURLWithPath:path];
-    if (!_audioPlayer) {
-        _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
-    }
+
+    _audioPlayer = nil;
+    _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    _audioPlayer.delegate = self;
     [_audioPlayer play];
+}
+
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
+{
+    if (flag) {
+        player = nil;
+    }
 }
 
 @end

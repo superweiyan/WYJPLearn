@@ -92,14 +92,14 @@
     return cell;
 }
 
-//- (CGSize)collectionView:(UICollectionView *)collectionView
-//                  layout:(UICollectionViewLayout*)collectionViewLayout
-//  sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-//    
-//    CGFloat width = [UIScreen mainScreen].bounds.size.width;
-//    CGFloat viewWidth = (width - 4 * 5 - 2 * 5) / 2;
-//    return CGSizeMake(viewWidth, 80);
-//}
+- (CGSize)collectionView:(UICollectionView *)collectionView
+                  layout:(UICollectionViewLayout*)collectionViewLayout
+  sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    CGFloat width = [UIScreen mainScreen].bounds.size.width;
+    CGFloat viewWidth = (width - 4 * 5 - 2 * 5) / 5;
+    return CGSizeMake(viewWidth, 80);
+}
 
 //- (CGSize)collectionView:(UICollectionView *)collectionView
 //                  layout:(UICollectionViewLayout*)collectionViewLayout
