@@ -12,6 +12,8 @@
 #import "WYTrainingType.h"
 #import "WYNumberUtils.h"
 
+#import "WYLogManager.h"
+
 @interface WYAudioExampleViewController ()
 {
     WYExampleService *_exampleService;
@@ -27,9 +29,11 @@
     // Do any additional setup after loading the view.
     
     _exampleService = [[WYServiceManager sharedObject] getService:@"WYExampleService"];
-    
     [self generateQuestion];
+    
+//    [WYLogManager info:WYExamLog log:@"login"];
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -93,6 +97,11 @@
 - (IBAction)onNextClicked:(id)sender
 {
     [self generateQuestion];
+}
+
+- (IBAction)onClicked:(id)sender
+{
+    
 }
 
 #pragma mark private

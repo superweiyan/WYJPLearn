@@ -11,6 +11,7 @@
 #import "WYModelManager.h"
 #import "WYInterfaceService.h"
 #import "WYServiceManager.h"
+#import "WYLogManager.h"
 
 @interface AppDelegate ()
 
@@ -27,6 +28,7 @@
     [[WYServiceManager sharedObject] registerServiceName:@"WYLessionService"];
     [[WYServiceManager sharedObject] registerServiceName:@"WYExampleService"];
     [[WYInterfaceService sharedObject] showMainViewController];
+    [WYLogManager initLogInfo];
     
     return YES;
 }

@@ -31,6 +31,7 @@
     [super viewDidLoad];
     
     [self initViews];
+    [self initTestView];
     
     WYWeakSelf
     _selectView.callback = ^(int index){
@@ -55,6 +56,17 @@
 //    [_collectionView registerNib:nib forCellWithReuseIdentifier:@"wyNoteIndentifier"];
     
 //    [_collectionView registerClass:[WYAudioFontCollectionViewCell class] forCellWithReuseIdentifier:@"wyNoteIndentifier"];
+}
+
+- (void)initTestView
+{
+    UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    backButton.backgroundColor = [UIColor redColor];
+    //some initialize code here...
+    UIBarButtonItem *barItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
+    self.navigationItem.leftBarButtonItem = barItem;    //not working
+    [backButton addTarget:self action:@selector(onClicked:) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.backBarButtonItem = barItem;
 }
 
 #pragma mark callback
@@ -128,5 +140,10 @@
 }
 
 #pragma mark private
+
+- (IBAction)onClicked:(id)sender
+{
+    
+}
 
 @end
