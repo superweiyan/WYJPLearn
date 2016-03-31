@@ -37,20 +37,20 @@
     secondController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"广场"
                                                                 image:[UIImage imageNamed:@"cow"]
                                                                   tag:1];
-    UINavigationController *secondNav = [[UINavigationController alloc]
+    WYNavigationController *secondNav = [[WYNavigationController alloc]
                                          initWithRootViewController:secondController];
     
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"WYExample" bundle:[NSBundle mainBundle]];
     _thirdController =  [storyBoard instantiateViewControllerWithIdentifier:@"WYAudioExampleViewController"];
     _thirdController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"考试" image:[UIImage imageNamed:@"dog"] tag:2];
-    UINavigationController *thirdNav = [[UINavigationController alloc] initWithRootViewController:_thirdController];
+    WYNavigationController *thirdNav = [[WYNavigationController alloc] initWithRootViewController:_thirdController];
     
     UIStoryboard *settingStoryBoard = [UIStoryboard storyboardWithName:@"WYSetting" bundle:[NSBundle mainBundle]];
     _settingController = [settingStoryBoard instantiateViewControllerWithIdentifier:@"WYSettingTableViewController"];
     _settingController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"我"
                                                                   image:[UIImage imageNamed:@"duck"]
                                                                     tag:3];
-    UINavigationController *fourNav = [[UINavigationController alloc]
+    WYNavigationController *fourNav = [[WYNavigationController alloc]
                                        initWithRootViewController:_settingController];
     
     self.viewControllers = @[firstNav, secondNav, thirdNav, fourNav];

@@ -31,7 +31,7 @@
     [super viewDidLoad];
     
     [self initViews];
-    [self initTestView];
+//    [self initTestView];
     
     WYWeakSelf
     _selectView.callback = ^(int index){

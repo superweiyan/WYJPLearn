@@ -1,22 +1,27 @@
 //
-//  WYSettingTableViewController.m
+//  WYShowLogTableViewController.m
 //  WYJPLearn
 //
 //  Created by weiyan on 16/3/30.
 //  Copyright © 2016年 LWY. All rights reserved.
 //
 
-#import "WYSettingTableViewController.h"
 #import "WYShowLogTableViewController.h"
+#import "WYLogService.h"
+#import "WYServiceManager.h"
 
-@interface WYSettingTableViewController ()
-
+@interface WYShowLogTableViewController ()
+{
+    NSArray *_loglines;
+}
 @end
 
-@implementation WYSettingTableViewController
+@implementation WYShowLogTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self loadReceLog];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -34,49 +39,30 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 3;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSInteger sectionNumber = 0;
-    switch (section) {
-        case 0:
-            sectionNumber = 1;
-            break;
-        case 1:
-            sectionNumber = 3;
-            break;
-        case 2:
-            sectionNumber = 3;
-            break;
-        default:
-            break;
-    }
-    return sectionNumber;
+    return _loglines.count;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if(indexPath.section == 1) {
-        if (indexPath.row == 0) {
-            //Todo
-            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"WYSetting" bundle:[NSBundle mainBundle]];
-            WYShowLogTableViewController *logViewController = [storyboard instantiateViewControllerWithIdentifier:@"WYShowLogTableViewController"];
-            [self.navigationController pushViewController:logViewController animated:YES];
-        }
-    }
-}
-
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    static NSString *wyLogInfoReuseIdentifier = @"wyLogInfoReuseIdentifier";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:wyLogInfoReuseIdentifier
+                                                            forIndexPath:indexPath];
+    cell.textLabel.font = [UIFont systemFontOfSize:10.0];
+    cell.textLabel.numberOfLines = 0;
     
-    // Configure the cell...
+    if (indexPath.row < _loglines.count) {
+        NSString *logInfo = [_loglines objectAtIndex:indexPath.row];
+        cell.textLabel.text = logInfo;
+    }
     
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.
@@ -122,6 +108,20 @@
 }
 */
 
+#pragma mark private
 
+- (void)loadReceLog
+{
+    WYLogService *logService = [[WYServiceManager sharedObject] getService:@"WYLogService"];
+    NSString *filePath = [logService getLog];
+    NSError *error;
+    NSString *fileContent = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:&error];
+    if (error) {
+        return ;
+    }
+    
+    _loglines = [fileContent componentsSeparatedByString:@"\n"];
+    [self.tableView reloadData];
+}
 
 @end

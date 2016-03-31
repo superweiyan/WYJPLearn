@@ -13,11 +13,13 @@
 
 extern NSString *WYExamLog;
 
-@interface WYLogManager : NSObject
+@interface WYLogService : NSObject
 
 + (void)info:(NSString *)key log:(NSString *)log;
 + (void)error:(NSString *)key log:(NSString *)log;
 
-+ (void)initLogInfo;
+- (void)initLogInfo;
+
+- (NSString *)getLog;
 
 @end

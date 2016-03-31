@@ -12,7 +12,7 @@
 #import "WYTrainingType.h"
 #import "WYNumberUtils.h"
 
-#import "WYLogManager.h"
+#import "WYLogService.h"
 
 @interface WYAudioExampleViewController ()
 {

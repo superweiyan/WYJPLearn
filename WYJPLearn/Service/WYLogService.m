@@ -6,16 +6,23 @@
 //  Copyright © 2016年 LWY. All rights reserved.
 //
 
-#import "WYLogManager.h"
+#import "WYLogService.h"
 
 NSString *WYExamLog = @"WYExamLog";
 
-@implementation WYLogManager
+@interface WYLogService()
+{
+    DDFileLogger *_fileLog;
+}
+@end
+
+@implementation WYLogService
 
 - (id)init
 {
     self = [super init];
     if (self) {
+        [self initLogInfo];
     }
     return self;
 }
@@ -30,11 +37,18 @@ NSString *WYExamLog = @"WYExamLog";
     DDLogError(@"[%@] %@", key, log);
 }
 
-+ (void)initLogInfo
+- (void)initLogInfo
 {
     [DDLog addLogger:[DDTTYLogger sharedInstance] withLevel:DDLogLevelInfo];
-    DDFileLogger *fileLog = [[DDFileLogger alloc] init];
-    fileLog.maximumFileSize = 5 * 1024 * 1024;
-    [DDLog addLogger:fileLog];
+    _fileLog = [[DDFileLogger alloc] init];
+    _fileLog.maximumFileSize = 5 * 1024 * 1024;
+    [DDLog addLogger:_fileLog];
+}
+
+- (NSString *)getLog
+{
+    DDLogFileInfo *fileInfo = [_fileLog currentLogFileInfo];
+//    NSString *filePath = [NSString stringWithFormat:@"%@/%@", fileInfo.filePath, fileInfo.fileName];
+    return  fileInfo.filePath;
 }
 @end
