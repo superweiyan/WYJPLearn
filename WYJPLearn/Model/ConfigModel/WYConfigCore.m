@@ -45,8 +45,9 @@
                       return ;
                   }
                   NSError *error = nil;
-                  id dict = [NSJSONSerialization  JSONObjectWithData:data options:0 error:&error];
+//                  id dict = [NSJSONSerialization  JSONObjectWithData:data options:0 error:&error];
                   if (error) {
+                      
                   } else {
 //                      [WYJsonToModel convertToModel:dict class:[WYConfig class]];
                   }
@@ -69,7 +70,7 @@
         return ;
     }
     NSError *error = nil;
-    id dict = [NSJSONSerialization  JSONObjectWithData:data options:0 error:&error];
+//    id dict = [NSJSONSerialization  JSONObjectWithData:data options:0 error:&error];
     if (error) {
         return ;
     }

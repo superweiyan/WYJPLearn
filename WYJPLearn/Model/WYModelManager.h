@@ -9,10 +9,12 @@
 #import <Foundation/Foundation.h>
 
 @class WYConfigModel;
+@class WYCharAudioModel;
 
 @interface WYModelManager : NSObject
 
-@property (nonatomic, strong) WYConfigModel *configModel;
+@property (nonatomic, strong) WYConfigModel     *configModel;
+@property (nonatomic, strong) WYCharAudioModel  *charAudioModel;
 
 + (instancetype)sharedObject;
 

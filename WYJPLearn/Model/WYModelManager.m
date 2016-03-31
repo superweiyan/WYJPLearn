@@ -8,6 +8,7 @@
 
 #import "WYModelManager.h"
 #import "WYConfigModel.h"
+#import "WYCharAudioModel.h"
 
 @implementation WYModelManager
 
@@ -32,6 +33,7 @@
 - (void)initData
 {
     _configModel = [[WYConfigModel alloc] init];
+    _charAudioModel = [[WYCharAudioModel alloc] init];
 }
 
 @end

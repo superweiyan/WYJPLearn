@@ -9,7 +9,9 @@
 #import "AppDelegate.h"
 #import "WYConfigService.h"
 #import "WYModelManager.h"
-#import "WYMainViewController.h"
+#import "WYInterfaceService.h"
+#import "WYServiceManager.h"
+#import "WYLogService.h"
 
 @interface AppDelegate ()
 
@@ -23,11 +25,11 @@
     
     [WYModelManager sharedObject];
     [WYConfigService sharedObject];
+    [[WYServiceManager sharedObject] registerServiceName:@"WYLessionService"];
+    [[WYServiceManager sharedObject] registerServiceName:@"WYExampleService"];
+    [[WYServiceManager sharedObject] registerServiceName:@"WYLogService"];
+    [[WYInterfaceService sharedObject] showMainViewController];
     
-    WYMainViewController *maincontroller = [[WYMainViewController alloc] init];
-
-    self.window.rootViewController = maincontroller;
-    [self.window makeKeyAndVisible];
     return YES;
 }
 
