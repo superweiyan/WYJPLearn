@@ -81,6 +81,14 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GAa-RN-XM2" id="fRo-8S-Yzv">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="显示日志" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QjH-xW-e60">
+                                                    <rect key="frame" x="15" y="0.0" width="305" height="43"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="0.46666666670000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
@@ -90,6 +98,20 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ph6-Wx-ixb" id="b8M-fA-aAR">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="清除缓存" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zht-4E-mdm">
+                                                    <rect key="frame" x="15" y="0.0" width="305" height="43.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="zht-4E-mdm" firstAttribute="top" secondItem="b8M-fA-aAR" secondAttribute="top" id="5vd-ro-fON"/>
+                                                <constraint firstAttribute="bottom" secondItem="zht-4E-mdm" secondAttribute="bottom" id="FOC-Z4-FmL"/>
+                                                <constraint firstItem="zht-4E-mdm" firstAttribute="leading" secondItem="b8M-fA-aAR" secondAttribute="leading" constant="15" id="FdC-3u-xNP"/>
+                                                <constraint firstAttribute="trailing" secondItem="zht-4E-mdm" secondAttribute="trailing" id="cL6-Os-OU7"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="doa-gI-97b">
@@ -118,20 +140,6 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bUo-3I-df9" id="5Ws-Cb-6aL">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="显示日志" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QjH-xW-e60">
-                                                    <rect key="frame" x="15" y="0.0" width="305" height="43"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="QjH-xW-e60" secondAttribute="trailing" id="6wN-AI-45Q"/>
-                                                <constraint firstAttribute="bottom" secondItem="QjH-xW-e60" secondAttribute="bottom" id="Ejz-SF-42H"/>
-                                                <constraint firstItem="QjH-xW-e60" firstAttribute="top" secondItem="5Ws-Cb-6aL" secondAttribute="top" id="cR5-vq-ERi"/>
-                                                <constraint firstItem="QjH-xW-e60" firstAttribute="leading" secondItem="5Ws-Cb-6aL" secondAttribute="leading" constant="15" id="let-yG-a2F"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="50d-nw-PQH">

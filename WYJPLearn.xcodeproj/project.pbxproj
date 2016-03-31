@@ -131,6 +131,7 @@
 		1BD764911CABDF250016A4B2 /* WYSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD764901CABDF250016A4B2 /* WYSettingTableViewController.m */; };
 		1BD764951CABF1750016A4B2 /* WYShowLogTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD764941CABF1750016A4B2 /* WYShowLogTableViewController.m */; };
 		1BD764981CABF5310016A4B2 /* WYPathUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD764971CABF5310016A4B2 /* WYPathUtils.m */; };
+		1BD7649B1CACFAA90016A4B2 /* WYClearCacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD7649A1CACFAA90016A4B2 /* WYClearCacheViewController.m */; };
 		1BE4E5431C75AB69006FA06B /* WYPhonematicChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE4E5421C75AB69006FA06B /* WYPhonematicChartViewController.m */; };
 		1BF74B691CA2E82D00BB1D16 /* WYAudioTraning.json in Resources */ = {isa = PBXBuildFile; fileRef = 1BF74B681CA2E82D00BB1D16 /* WYAudioTraning.json */; };
 		1BF74B6C1CA3C36A00BB1D16 /* WYContentParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF74B6B1CA3C36A00BB1D16 /* WYContentParse.m */; };
@@ -304,6 +305,8 @@
 		1BD764941CABF1750016A4B2 /* WYShowLogTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYShowLogTableViewController.m; sourceTree = "<group>"; };
 		1BD764961CABF5310016A4B2 /* WYPathUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYPathUtils.h; sourceTree = "<group>"; };
 		1BD764971CABF5310016A4B2 /* WYPathUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYPathUtils.m; sourceTree = "<group>"; };
+		1BD764991CACFAA90016A4B2 /* WYClearCacheViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYClearCacheViewController.h; sourceTree = "<group>"; };
+		1BD7649A1CACFAA90016A4B2 /* WYClearCacheViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYClearCacheViewController.m; sourceTree = "<group>"; };
 		1BE4E5411C75AB69006FA06B /* WYPhonematicChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYPhonematicChartViewController.h; sourceTree = "<group>"; };
 		1BE4E5421C75AB69006FA06B /* WYPhonematicChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYPhonematicChartViewController.m; sourceTree = "<group>"; };
 		1BF74B681CA2E82D00BB1D16 /* WYAudioTraning.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WYAudioTraning.json; sourceTree = "<group>"; };
@@ -656,6 +659,8 @@
 				1BD764901CABDF250016A4B2 /* WYSettingTableViewController.m */,
 				1BD764931CABF1750016A4B2 /* WYShowLogTableViewController.h */,
 				1BD764941CABF1750016A4B2 /* WYShowLogTableViewController.m */,
+				1BD764991CACFAA90016A4B2 /* WYClearCacheViewController.h */,
+				1BD7649A1CACFAA90016A4B2 /* WYClearCacheViewController.m */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -998,6 +1003,7 @@
 				1B97D6271C2AD52C00047B96 /* MFLessionViewController.m in Sources */,
 				1BF9CCA31C9A986500EA3402 /* WYLessionService.m in Sources */,
 				1BF9CCC91C9FA47E00EA3402 /* WYAudioPlayUtils.m in Sources */,
+				1BD7649B1CACFAA90016A4B2 /* WYClearCacheViewController.m in Sources */,
 				1BF74B761CA3E97F00BB1D16 /* WYExampleService.m in Sources */,
 				1BD764981CABF5310016A4B2 /* WYPathUtils.m in Sources */,
 				1BF74B7B1CA907D900BB1D16 /* WYNumberUtils.m in Sources */,

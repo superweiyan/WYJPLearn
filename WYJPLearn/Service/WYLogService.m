@@ -48,7 +48,6 @@ NSString *WYExamLog = @"WYExamLog";
 - (NSString *)getLog
 {
     DDLogFileInfo *fileInfo = [_fileLog currentLogFileInfo];
-//    NSString *filePath = [NSString stringWithFormat:@"%@/%@", fileInfo.filePath, fileInfo.fileName];
     return  fileInfo.filePath;
 }
 @end
